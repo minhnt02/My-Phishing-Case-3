@@ -1,0 +1,8 @@
+flask==2.3.3
+flask-script==2.0.5
+werkzeug==2.3.7
+flask-pymongo==2.3.0
+flask-negotiate==0.1.0
+requests~=2.31.0
+gunicorn
+gevent

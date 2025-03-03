@@ -1,0 +1,12 @@
+services:
+  tele:
+    build: .
+    image: tele-service:01
+    container_name: 'tele-service'
+    user: root
+    ports:
+    - "10000:10000"
+    volumes:
+    - /etc/localtime:/etc/localtime:ro
+    - ./logs:/home/app/web/logs
+    restart: always
