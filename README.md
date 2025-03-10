@@ -26,7 +26,17 @@ Before executing this phase, I had no concrete ideas, and there were two major o
 I had successfully executed Phase 1 by setting up a custom domain and using it to send phishing emails. It worked quite well. However, after that, all employees received an alert that a phishing campaign was targeting their organization. This heightened their awareness, making them much more cautious. Additionally, from that point onward, all external emails were flagged with a warning, meaning phishing via email was now almost hopeless.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)The Telegram Targeting Challenge:
-The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!
+The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!   
+
+So, the two immediate problems I needed to solve were: using a method other than email phishing and identifying employees who use Telegram.Among the information I was provided: full names, emails, and phone numbers(email was no longer an option). Looking at what I had left, I realized: phone numbers.Ah ha! I still had a direct channel to contact my targets. This immediately led me to decide on using SMS phishing.
+
+However, to take over a target’s Telegram account, I needed to send them a malicious link leading to the fake Telegram page I had set up earlier. Sending a direct link like that via SMS would be extremely suspicious. So, I had to come up with an intermediary communication channel between SMS and the user to drop my malicious Telegram link.
+
+And, of course, Zalo was the perfect candidate - extremely popular with a massive user base in Vietnam.
+
+At this point, the plan was almost complete. My strategy would be:   
+
+```Send an SMS inviting the target to join a pre-created Zalo group chat -----> Drop the malicious Telegram link inside that group chat -----> Wait for users to log in -----> Capture their access tokens and take over their accounts.```
 
 ## III. Setting up  
 ## IV. Chain 1  
