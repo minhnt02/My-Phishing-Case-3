@@ -42,9 +42,9 @@ I had successfully executed Phase 1 by setting up a custom domain and using it t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)The Telegram Targeting Challenge:
 The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!   
 
-So, the two immediate problems I needed to solve were: using a method other than email phishing and identifying employees who use Telegram.Among the information I was provided: full names, emails, and phone numbers(email was no longer an option). Looking at what I had left, I realized: phone numbers.Ah ha! I still had a direct channel to contact my targets. This immediately led me to decide on using SMS phishing.
+So, the two immediate problems I needed to solve were: using a method other than email phishing and identifying employees who use Telegram.Among the information I was provided: full names, emails, and phone numbers(email was no longer an option). Looking at what I had left, I realized: phone numbers. Ah ha! I still had a direct channel to contact my targets. This immediately led me to decide on using SMS phishing.
 
-However, to take over a target’s Telegram account, I needed to send them a malicious link leading to the fake Telegram page I had set up earlier. Sending a direct link like that via SMS would be extremely suspicious. So, I had to come up with an intermediary communication channel between SMS and the user to drop my malicious Telegram link.And, of course, Zalo was the perfect candidate - extremely popular with a massive user base in Vietnam.
+However, to take over a target’s Telegram account, I needed to send them a malicious link leading to the fake Telegram page I had set up earlier. Sending a direct link like that via SMS would be extremely suspicious. So, I had to come up with an intermediary communication channel between SMS and the user to drop my malicious Telegram link and Zalo was the perfect candidate - extremely popular with a massive user base in Vietnam.
 
 At this point, the plan was almost complete. My strategy would be:   
 
@@ -53,11 +53,64 @@ At this point, the plan was almost complete. My strategy would be:
 So, the issue of "using a method other than email phishing" was solved. Now, it was time to figure out "identifying employees who use Telegram".
 Honestly, even at this point, I hadn’t come up with a definitive solution to this problem. Instead of hitting a dead end, I decided to take a more comprehensive approach: preparing a scenario that would work for both Telegram users and non-Telegram users.
 
+After drafting multiple scenarios and taking advantage of the phishing alert sent by the SOC team in Phase 1, I finalized my plan as follows:  
+
+-----> The company requested the AI team to develop an AI BOT on the Zalo platform to quickly notify employees about incidents, such as the recent phishing campaign.  
+-----> Send an SMS with a Zalo group invitation link, requesting all employees to join. Simultaneously, automatically add users to the group using their phone numbers.  
+-----> Inside the Zalo group, drop a fake Telegram link, instructing employees to use Telegram as their primary communication tool.  
+
 Everything was set. Now, it show time.
 
-## IV. Chain 1 - SMS Phishing
+## IV. Chain 1 - SMS Phishing  
+
+1. Set up Zalo group chat
+
+First, we need to create a Zalo Group Chat with the title "<Company name> Internal Announcement" At the same time, we also need to create two accounts - one acting as a chat bot for the group and the other as the group administrator (who will impersonate the Head of the AI Application Product Department). The details are as follows:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7734052e-a794-428b-9f84-1e2b275dc60e">
+</p>  
+<p align="center">Fake Chat Bot Account</p>  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65614321-f592-44ee-8936-fabeee294089">
+</p> 
+<p align="center">Fake AI Department Head Account</p>  
+
+These two accounts will work together to lure victims into accessing the malicious website.  
+
+2. Send SMS
+
+Next, we will send an SMS to persuade users to join the Zalo group we just created.This was the most time-consuming task in the entire campaign (and, of course, costly too 😃). When sending SMS messages, you should only send them to 100 people at a time. If too many messages are sent at once, you’ll get temporarily blocked. So, if your target list has 1,000 people, you should split it into 10 batches.Recommended approach:Pre-write the message template.
+Divide the 1,000 targets into 10 separate lists, send a batch every 5 minutes, if you have enough preparation time, use 2-3 SIM cards and two different phones to send messages simultaneously, reducing delays between batches.(Unfortunately, I didn’t have enough time to prepare this time, so I ended up using my personal SIM to message the entire staff. My SIM was almost blocked, and I nearly had to deal with the police 😂). My SMS content was as follows:  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4151006e-a47a-4f93-83e2-fd72b0b28283">
+</p> 
+A few minutes later, a large number of users had joined my chat group. Amazing! 🎉🎉 The first step was a success! Now it's time to move on to the next step.  
 
 ## V. Chain 2 - Messaging App Scam  
+Immediately after the SMS was sent, I continued adding employees and approving join requests for the chat group.This was the moment when the two pre-created accounts came into play by sending notifications, requesting employees to directly add their colleagues to the group to speed up the process:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1b52918f-c301-4d8e-b746-dcaccff492d7">
+</p> 
+
+At this point, I made a huge mistake—I delayed dropping the malicious Telegram link. Although the group already had a large number of users, I wanted to wait until I reached the full scope (I got a bit greedy with this).With so many SMS messages being sent, getting flagged was only a matter of time—not to mention that after Phase 1, the SOC team had tightened security even further.And then, the inevitable happened - about two hours later, users started receiving warning messages about the campaign.Realizing this, I immediately dropped the malicious Telegram link using the Bot account(Basically, I was a step behind the SOC team — my bad 😛), with the following message:  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/68e203f6-eba5-4fba-95fb-99de51b94f03">
+</p> 
 
 ## VI. Chain 3  - Telegram Webapp Phishing  
+1. Collect Access Token
+Once users clicked on the provided link, they were redirected to the fake Telegram Web page, which had been set up in advance with the following interface:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/768061fa-cded-478b-85b8-17eda01d8392">
+</p>  
 
+When users enter their phone number and the OTP sent from the real Telegram to their account, if they proceed to submit the OTP to my fake website, their Access Token and contact list information will be sent to the Attack Server.The mechanism behind this attack technique is that the attacker’s server acts as an intermediary proxy, relaying traffic between the user’s device and the real Telegram server while intercepting the user's access token during the process.  
+The plan seemed to have failed on chains 2, but the good news was that some users still fell for the scam - just not as many as I had hoped. Telegram access tokens from users, which were in the following format:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f2d1c921-44a5-4164-97c9-d81baa1c248e">
+</p>  
+
+2. Take over account
