@@ -28,7 +28,7 @@ After the process is complete, we will obtain two files: "fullchain.pem" and "pr
 </p>  
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/68b376db-041f-4a66-8320-689d958ff25c">
+  <img src="https://github.com/user-attachments/assets/f4b378bd-9065-450b-a201-d10582280631">
 </p>   
 
 After completing the SSL setup, to run the fake Telegram Web on the Python Flask platform, execute the following command:  
