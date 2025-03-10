@@ -133,6 +133,6 @@ Modify the action you want to perform on the victim’s account.In this case, I 
 ## VII. Conclusion
 During the deployment process, I faced many challenges, and things only started to improve when I reached out for help from my team (thank you, Lee Nguyen and hieudm25).
 
-This was a tough case—from the target to the requirements—but in the end, the campaign was still successful.
+This was a tough case from the target to the requirements but in the end, the campaign was still successful.
 
-Lessons learned: Even the strongest cybersecurity organizations have one unfixable weakness—human nature. And the power of teamwork and imagination is truly terrifying.
+Lessons learned: Even the strongest cybersecurity organizations have one unfixable weakness - human nature. And the power of teamwork and imagination is truly terrifying.
