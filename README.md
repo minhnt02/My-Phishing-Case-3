@@ -17,7 +17,7 @@ OK, the model below will describe what I did in this campaign. I will go into de
 
 ## II. Setting up  
 
-The goal of this campaign is to steal the Telegram accounts of employees.Therefore,we will impersonate the Telegram Web login interface(with a pre-purchased domain—this domain will be used for the fake Telegram login page.), running on a Python Flask platform. However, by default, these phishing websites will not function without SSL.To enable SSL, generate a certificate using the Certbot tool:
+The goal of this campaign is to steal the Telegram accounts of employees.Therefore,we will impersonate the Telegram Web login interface(with a pre-purchased domain - this domain will be used for the fake Telegram login page), running on a Python Flask platform. However, by default, these phishing websites will not function without SSL.To enable SSL, generate a certificate using the Certbot tool:
 ```
 sudo certbot certonly --standalone -d <your domain> -d www.<your domain>
 ```
