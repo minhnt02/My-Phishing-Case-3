@@ -6,7 +6,7 @@ As described: 3-chains phishing – sounds interesting, right? While I was execu
 
 So, what makes this campaign different from the previous ones I’ve executed?   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Target: This time, the target is one of the top cybersecurity companies in Vietnam (as they often say in movies: "hacker hacks hacker").   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Scope: This time, we didn’t have the authority to decide the campaign’s scope. The objective was set as follows: Kill all! The campaign's scope covers the entire workforce of the target company - an extremely large scale.   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Scope: This time, we didn’t have the authority to decide the campaign’s scope. The objective was set as follows: KILL ALL! The campaign's scope covers the entire workforce of the target company - an extremely large scale.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Execution: This time, I had to launch the phishing attack entirely from the outside, meaning I couldn't use internal emails (losing 99% of power). However, to minimize time to recon, was provided with a full list of personnel, including phone numbers, personal emails, and full names - key pieces that would complete my plan later on.   
 
 OK, the model below will describe what I did in this campaign. I will go into detail about each chain I used in this campaign:  
