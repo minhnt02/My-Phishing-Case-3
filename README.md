@@ -84,8 +84,9 @@ Next, we will send an SMS to persuade users to join the Zalo group we just creat
 Divide the 1,000 targets into 10 separate lists, send a batch every 5 minutes, if you have enough preparation time, use 2-3 SIM cards and two different phones to send messages simultaneously, reducing delays between batches.(Unfortunately, I didn’t have enough time to prepare this time, so I ended up using my personal SIM to message the entire staff. My SIM was almost blocked, and I nearly had to deal with the police 😂). My SMS content was as follows:  
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4151006e-a47a-4f93-83e2-fd72b0b28283">
+  <img src="https://github.com/user-attachments/assets/741c8548-b2ac-467c-ba7d-7104003237e6">
 </p> 
+
 A few minutes later, a large number of users had joined my chat group. Amazing! 🎉🎉 The first step was a success! Now it's time to move on to the next step.  
 
 ## V. Chain 2 - Messaging App Scam  
