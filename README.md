@@ -9,7 +9,6 @@ So, what makes this campaign different from the previous ones I’ve executed?
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Scope: This time, we didn’t have the authority to decide the campaign’s scope. The objective was set as follows: Kill all! The campaign's scope covers the entire workforce of the target company - an extremely large scale.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Different Execution: This time, I had to launch the phishing attack entirely from the outside, meaning I couldn't use internal emails (losing 99% of power). However, to minimize time to recon, was provided with a full list of personnel, including phone numbers, personal emails, and full names - key pieces that would complete my plan later on.   
 
-
 OK, the model below will describe what I did in this campaign. I will go into detail about each chain I used in this campaign:  
 
 <p align="center">
@@ -17,6 +16,12 @@ OK, the model below will describe what I did in this campaign. I will go into de
 </p> 
 
 ## II. Setting up  
+
+The goal of this campaign is to steal the Telegram accounts of employees.Therefore,we will impersonate the Telegram Web login interface(with a pre-purchased domain—this domain will be used for the fake Telegram login page.), running on a Python Flask platform. However, by default, these phishing websites will not function without SSL.To enable SSL, generate a certificate using the Certbot tool:
+```
+sudo certbot certonly --standalone -d <your domain> -d www.<your domain>
+```
+After the process is complete, we will obtain two files: "fullchain.pem" and "privkey.pem".Take the paths of these two files and add them to the Flask configuration in the "manage.py" file as follows:  
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3268b98a-c344-4224-8aa8-918da9b33e22">
@@ -26,6 +31,10 @@ OK, the model below will describe what I did in this campaign. I will go into de
   <img src="https://github.com/user-attachments/assets/68b376db-041f-4a66-8320-689d958ff25c">
 </p>   
 
+After completing the SSL setup, to run the fake Telegram Web on the Python Flask platform, execute the following command:  
+```
+python3 manage.py
+```  
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a9ae9d12-b92a-4799-9bc9-2cebbfd9585f">
 </p>
