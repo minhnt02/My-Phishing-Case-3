@@ -104,7 +104,7 @@ Immediately after the SMS was sent, I continued adding employees and approving j
   <img src="https://github.com/user-attachments/assets/1b52918f-c301-4d8e-b746-dcaccff492d7">
 </p> 
 
-At this point, I made a huge mistake—I delayed dropping the malicious Telegram link. Although the group already had a large number of users, I wanted to wait until I reached the full scope (I got a bit greedy with this).With so many SMS messages being sent, getting flagged was only a matter of time—not to mention that after Phase 1, the SOC team had tightened security even further.And then, the inevitable happened - about two hours later, users started receiving warning messages about the campaign.Realizing this, I immediately dropped the malicious Telegram link using the Bot account(Basically, I was a step behind the SOC team — my bad 😛), with the following message:  
+At this point, I made a huge mistake - I delayed dropping the malicious Telegram link. Although the group already had a large number of users, I wanted to wait until I reached the full scope (I got a bit greedy with this).With so many SMS messages being sent, getting flagged was only a matter of time—not to mention that after Phase 1, the SOC team had tightened security even further.And then, the inevitable happened - about two hours later, users started receiving warning messages about the campaign.Realizing this, I immediately dropped the malicious Telegram link using the Bot account(Basically, I was a step behind the SOC team — my bad 😛), with the following message:  
 <p align="center">
   <img src="https://github.com/user-attachments/assets/68e203f6-eba5-4fba-95fb-99de51b94f03">
 </p> 
