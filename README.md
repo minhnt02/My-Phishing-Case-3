@@ -102,6 +102,7 @@ At this point, I made a huge mistake—I delayed dropping the malicious Telegram
 
 ## VI. Chain 3  - Telegram Webapp Phishing  
 1. Collect Access Token
+
 Once users clicked on the provided link, they were redirected to the fake Telegram Web page, which had been set up in advance with the following interface:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/768061fa-cded-478b-85b8-17eda01d8392">
