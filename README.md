@@ -44,9 +44,7 @@ The goal for this phase was to take over employees' Telegram accounts, but there
 
 So, the two immediate problems I needed to solve were: using a method other than email phishing and identifying employees who use Telegram.Among the information I was provided: full names, emails, and phone numbers(email was no longer an option). Looking at what I had left, I realized: phone numbers.Ah ha! I still had a direct channel to contact my targets. This immediately led me to decide on using SMS phishing.
 
-However, to take over a target’s Telegram account, I needed to send them a malicious link leading to the fake Telegram page I had set up earlier. Sending a direct link like that via SMS would be extremely suspicious. So, I had to come up with an intermediary communication channel between SMS and the user to drop my malicious Telegram link.
-
-And, of course, Zalo was the perfect candidate - extremely popular with a massive user base in Vietnam.
+However, to take over a target’s Telegram account, I needed to send them a malicious link leading to the fake Telegram page I had set up earlier. Sending a direct link like that via SMS would be extremely suspicious. So, I had to come up with an intermediary communication channel between SMS and the user to drop my malicious Telegram link.And, of course, Zalo was the perfect candidate - extremely popular with a massive user base in Vietnam.
 
 At this point, the plan was almost complete. My strategy would be:   
 
