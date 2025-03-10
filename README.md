@@ -37,7 +37,7 @@ This campaign was divided into two phases, each with different objectives: "Cond
 Before executing this phase, I had no concrete ideas, and there were two major obstacles that made me think this campaign would never succeed:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)Increased Awareness After Phase 1:
-I had successfully executed Phase 1 by setting up a custom domain and using it to send phishing emails. It worked quite well. However, after that, all employees received an alert that a phishing campaign was targeting their organization. This heightened their awareness, making them much more cautious. Additionally, from that point onward, all external emails were flagged with a warning, meaning phishing via email was now almost hopeless.
+I had successfully executed Phase 1 by setting up a custom domain and using it to send phishing emails. The results quite good. However, after that, all employees received an alert that a phishing campaign was targeting their organization. This heightened their awareness, making them much more cautious. Additionally, from that point onward, all external emails were flagged with a warning, meaning phishing via email was now almost hopeless.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)The Telegram Targeting Challenge:
 The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!   
