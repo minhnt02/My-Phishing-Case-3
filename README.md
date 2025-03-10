@@ -55,8 +55,9 @@ Honestly, even at this point, I hadn’t come up with a definitive solution to t
 
 Everything was set. Now, it show time.
 
-## IV. Chain 1  
+## IV. Chain 1 - SMS Phishing
 
-## V. Chain 2    
+## V. Chain 2 - Messaging App Scam  
 
-## VI. Chain 3  
+## VI. Chain 3  - Telegram Webapp Phishing  
+
