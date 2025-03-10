@@ -114,3 +114,5 @@ The plan seemed to have failed on chains 2, but the good news was that some user
 </p>  
 
 2. Take over account
+
+The only valuable field among the data we collected is "dcAuthKey", which can be used with the "Telethon" library in Python to control the Telegram account.
