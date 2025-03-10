@@ -115,7 +115,8 @@ The plan seemed to have failed on chains 2, but the good news was that some user
 
 2. Take over account
 
-The only valuable field among the data we collected is "dcAuthKey", which can be used with the "Telethon" library in Python to control the Telegram account.The script "login_tele.py" (written by Lee Nguyen) will handle this task.All you need to do is:
+The only valuable field among the data we collected is "dcAuthKey", which can be used with the "Telethon" library in Python to control the Telegram account.The script "login_tele.py" (written by Lee Nguyen) will handle this task.All you need to do is:  
+
 Replace the value of "sess.auth_key" with the "dcAuthKey" you collected:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d0b694c-ba0d-4002-a9af-2d3bd0684a7a">
