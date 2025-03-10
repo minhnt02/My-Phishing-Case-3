@@ -27,3 +27,10 @@ I had successfully executed Phase 1 by setting up a custom domain and using it t
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)The Telegram Targeting Challenge:
 The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!
+
+## III.Setting up  
+## II.Chain 1  
+
+## II.Chain 2    
+
+## II.Chain 3  
