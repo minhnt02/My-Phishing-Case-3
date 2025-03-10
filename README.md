@@ -1,6 +1,6 @@
 <h1 align="center">🎣 My Phishing Case - 3 🎣</h1>   
 
-## I.What's different in this campaign?
+## I. What's different in this campaign?
 
 As described: 3-chains phishing – sounds interesting, right? While I was executing this phishing campaign, I wasn’t even sure where I got the idea from. Everything just happened in my head at that moment, and I thought that this might be one of the most interesting and memorable cases in my career.  
 
@@ -16,7 +16,7 @@ OK, the model below will describe what I did in this campaign. I will go into de
   <img src="https://github.com/user-attachments/assets/4c92d9b9-db16-41f3-aa0a-07a2ef37ce8e">
 </p>
 
-## II.Challenges and origin of the Idea  
+## II. Challenges and origin of the Idea  
 
 This campaign was divided into two phases, each with different objectives: "Conduct phishing to take over employee accounts" and "Conduct phishing to take over Telegram accounts." This topic describes the process I followed in Phase 2.
 
@@ -28,9 +28,9 @@ I had successfully executed Phase 1 by setting up a custom domain and using it t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+)The Telegram Targeting Challenge:
 The goal for this phase was to take over employees' Telegram accounts, but there was a big problem - not many people use Telegram. To steal a Telegram account, you first need to target someone who actually uses Telegram. But with a massive list of employees, how could I figure out who among them was using Telegram? I had no idea!
 
-## III.Setting up  
-## II.Chain 1  
+## III. Setting up  
+## IV. Chain 1  
 
-## II.Chain 2    
+## V. Chain 2    
 
-## II.Chain 3  
+## VI. Chain 3  
