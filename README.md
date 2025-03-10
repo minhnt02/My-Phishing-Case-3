@@ -16,7 +16,9 @@ OK, the model below will describe what I did in this campaign. I will go into de
   <img src="https://github.com/user-attachments/assets/4c92d9b9-db16-41f3-aa0a-07a2ef37ce8e">
 </p>
 
-## II. Challenges and origin of the Idea  
+## II. Setting up  
+
+## III. Challenges and origin of the Idea  
 
 This campaign was divided into two phases, each with different objectives: "Conduct phishing to take over employee accounts" and "Conduct phishing to take over Telegram accounts." This topic describes the process I followed in Phase 2.
 
@@ -36,9 +38,13 @@ And, of course, Zalo was the perfect candidate - extremely popular with a massiv
 
 At this point, the plan was almost complete. My strategy would be:   
 
-```Send an SMS inviting the target to join a pre-created Zalo group chat -----> Drop the malicious Telegram link inside that group chat -----> Wait for users to log in -----> Capture their access tokens and take over their accounts.```
+```Send an SMS inviting the target to join a pre-created Zalo group chat -----> Drop the malicious Telegram link inside that group chat -----> Wait for users to log in -----> Capture their access tokens and take over their accounts.```   
 
-## III. Setting up  
+So, the issue of "using a method other than email phishing" was solved. Now, it was time to figure out "identifying employees who use Telegram".
+Honestly, even at this point, I hadn’t come up with a definitive solution to this problem. Instead of hitting a dead end, I decided to take a more comprehensive approach: preparing a scenario that would work for both Telegram users and non-Telegram users.
+
+Everything was set. Now, it show time.
+
 ## IV. Chain 1  
 
 ## V. Chain 2    
