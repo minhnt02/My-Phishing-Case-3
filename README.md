@@ -14,9 +14,21 @@ OK, the model below will describe what I did in this campaign. I will go into de
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4c92d9b9-db16-41f3-aa0a-07a2ef37ce8e">
-</p>
+</p> 
 
 ## II. Setting up  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3268b98a-c344-4224-8aa8-918da9b33e22">
+</p>  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/68b376db-041f-4a66-8320-689d958ff25c">
+</p>   
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a9ae9d12-b92a-4799-9bc9-2cebbfd9585f">
+</p>
 
 ## III. Challenges and origin of the Idea  
 
