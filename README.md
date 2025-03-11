@@ -101,7 +101,7 @@ A few minutes later, a large number of users had joined my chat group. Amazing! 
 ## V. Chain 2 - Messaging App Scam  
 Immediately after the SMS was sent, I continued adding employees and approving join requests for the chat group.This was the moment when the two pre-created accounts came into play by sending notifications, requesting employees to directly add their colleagues to the group to speed up the process:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1b52918f-c301-4d8e-b746-dcaccff492d7">
+  <img src="https://github.com/user-attachments/assets/169227a9-23fd-4d48-94b3-43665e5dfbe3">
 </p> 
 
 At this point, I made a huge mistake - I delayed dropping the malicious Telegram link. Although the group already had a large number of users, I wanted to wait until I reached the full staffs (I got a bit greedy with this).With so many SMS messages being sent, getting flagged was only a matter of time—not to mention that after Phase 1, the SOC team had tightened security even further.And then, the inevitable happened - about two hours later, users started receiving warning messages about the campaign.Realizing this, I immediately dropped the malicious Telegram link using the Bot account(Basically, I was a step behind the SOC team — my bad 😛), with the following message:  
