@@ -27,7 +27,7 @@ async def login():
     # await client.start(bot_token=bot_token)
 
     # Starting as a user account
-    # z = await client.start("+84963411701")
+    # z = await client.start("+84.....701")
     z = await client.start()
 
     me = await client.get_me()
